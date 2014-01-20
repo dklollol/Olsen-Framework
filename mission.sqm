@@ -1,0 +1,296 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"SBE_US_ARMY",
+		"acex_ru_men_naval",
+		"CAWheeled",
+		"ace_c_vehicle",
+		"utes",
+		"CATracked"
+	};
+	addOnsAuto[]=
+	{
+		"SBE_US_ARMY",
+		"acex_ru_men_naval",
+		"CAWheeled",
+		"ace_c_vehicle",
+		"utes"
+	};
+	randomSeed=5923405;
+	class Intel
+	{
+		briefingName="C09 Olsen Framework V5";
+		briefingDescription="JIP, NO RESPAWN, 60 MIN TIME LIMIT";
+		startWeather=0.39999998;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=5;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={3438.542,19,3624.051};
+					azimut=179.436;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="SBE_US_Soldier_SL_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="[this, ""SL"", ""1.1""] call GEARSCRIPT;";
+					description="1.1 Squad Leader";
+				};
+				class Item1
+				{
+					position[]={3430.9272,19,3617.0835};
+					azimut=165.89101;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="SBE_US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="[this, ""FL"", ""1.1""] call GEARSCRIPT;";
+					description="1.1.A Fire Team Leader (Grenadier)";
+				};
+				class Item2
+				{
+					position[]={3433.8267,19,3617.1245};
+					azimut=242.493;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="SBE_US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this, ""AR"", ""1.1""] call GEARSCRIPT;";
+					description="1.1.A Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={3433.8926,19,3613.7947};
+					azimut=332.01401;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="SBE_US_Soldier_LAT_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this, ""LAT"", ""1.1""] call GEARSCRIPT;";
+					description="1.1.A Rifleman AT";
+				};
+				class Item4
+				{
+					position[]={3430.9136,19,3613.8909};
+					azimut=56.704399;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="SBE_US_Soldier_AAR_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this, ""ARA"", ""1.1""] call GEARSCRIPT;";
+					description="1.1.A Automatic Rifleman Assistant";
+				};
+				class Item5
+				{
+					position[]={3445.6492,19,3617.0283};
+					azimut=-123.379;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="SBE_US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="[this, ""FL"", ""1.1""] call GEARSCRIPT;";
+					description="1.1.B Fire Team Leader (Grenadier)";
+				};
+				class Item6
+				{
+					position[]={3442.7429,19,3617.0793};
+					azimut=-205.045;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="SBE_US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this, ""AR"", ""1.1""] call GEARSCRIPT;";
+					description="1.1.B Automatic Rifleman";
+				};
+				class Item7
+				{
+					position[]={3442.7224,19,3613.7976};
+					azimut=50.8312;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="SBE_US_Soldier_Medic_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this, ""MD"", ""1.1""] call GEARSCRIPT;";
+					description="1.1.B Medic";
+				};
+				class Item8
+				{
+					position[]={3445.6912,19,3613.8201};
+					azimut=-25.3608;
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="SBE_US_Soldier_AAR_EP1";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="[this, ""ARA"", ""1.1""] call GEARSCRIPT;";
+					description="1.1.B Automatic Rifleman Assistant";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3937.4417,19,3609.6138};
+					azimut=90;
+					id=11;
+					side="EAST";
+					vehicle="ACE_RU_Soldier_D";
+					leader=1;
+					skill=0.2;
+					ammo=0;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={3479.5876,19,3625.7834};
+			azimut=179.436;
+			special="NONE";
+			id=9;
+			side="EMPTY";
+			vehicle="HMMWV_M2";
+			leader=1;
+			skill=0.60000002;
+			init="[this, ""HUMMVEE""] call VEHGEARSCRIPT; (vehicle this) setVariable [""vehName"", ""Humvee M2""]; (vehicle this) setVariable [""vehTeam"", ""WEST""];";
+		};
+		class Item1
+		{
+			position[]={3460.9587,19,3590.2856};
+			azimut=179.436;
+			special="NONE";
+			id=10;
+			side="EMPTY";
+			vehicle="ACE_UAZ_MG_RU";
+			leader=1;
+			skill=0.60000002;
+			text="UAZ";
+			init="[this, ""UAZ""] call VEHGEARSCRIPT; (vehicle this) setVariable [""vehName"", ""UAZ DShKM""]; (vehicle this) setVariable [""vehTeam"", ""EAST""];";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3435.479,18.992722,3530.7278};
+			activationBy="ANY";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="_null = [player] execVM ""utility\gearExport.sqf"";";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=4869317;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=10470272;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=14989315;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
