@@ -19,7 +19,7 @@ removebackpack player;
 
 if (!spectating) then {
 	[true] call acre_api_fnc_setSpectator;
-	[] execVM "core\scripts\spectate.sqf";
+	[] execVM "core\spectate.sqf";
 } 
 else {
 	titleText [MESSAGE, "BLACK IN", 0.2];
