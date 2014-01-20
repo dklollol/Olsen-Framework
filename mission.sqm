@@ -21,7 +21,7 @@ class Mission
 	randomSeed=5923405;
 	class Intel
 	{
-		briefingName="C09 Olsen Framework V5";
+		briefingName="C09 Olsen Framework v2.0";
 		briefingDescription="JIP, NO RESPAWN, 60 MIN TIME LIMIT";
 		startWeather=0.39999998;
 		forecastWeather=0.25;
