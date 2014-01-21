@@ -6,8 +6,6 @@ if (isServer) then {
 
 	ADDPLAYABLETEAM(west, "WEST");
 	ADDAITEAM(east, "EAST");
-	ADDAITEAM(resistance, "RESISTANCE");
-	ADDAITEAM(civilian, "CIVILIAN");
 
 };
 
