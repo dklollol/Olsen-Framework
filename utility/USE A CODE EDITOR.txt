@@ -1,4 +1,0 @@
-I recommend notepad++
-http://notepad-plus-plus.org/download/v6.2.3.html
-
-Set the language to C++ enjoy!
