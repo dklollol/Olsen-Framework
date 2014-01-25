@@ -42,7 +42,7 @@ _textSide = 0;
 	};
 } forEach _teams;
 
-_timeLimitText = format["Mission duration: %1 out of %2 minuets", (ceil(time / 60)), (_timeLimt / 60)];
+_timeLimitText = format["Mission duration: %1 out of %2 minutes", (ceil(time / 60)), (_timeLimt / 60)];
 
 _endTitleText = format["%1<br />%2", _scenario, _timeLimitText];
 

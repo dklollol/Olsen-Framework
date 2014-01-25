@@ -1,7 +1,7 @@
 #include "definitions.sqf" //DO NOT REMOVE
 
-ace_sys_wounds_no_medical_gear = true;
-ace_sys_wounds_noai = true;
+ace_sys_wounds_no_medical_gear = true; //Units spawn without IFAK (the three magical medical slots above the pistol magazines) or any other medical gear
+ace_sys_wounds_noai = true; //Disables ace medical for ai (big preformance boost)
 enableSaving [false, false];
 
 if (isServer) then {
