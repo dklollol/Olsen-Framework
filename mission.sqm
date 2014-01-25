@@ -196,7 +196,7 @@ class Mission
 			vehicle="HMMWV_M2";
 			leader=1;
 			skill=0.60000002;
-			init="[this, ""HUMMVEE""] call VEHGEARSCRIPT; (vehicle this) setVariable [""vehName"", ""Humvee M2""]; (vehicle this) setVariable [""vehTeam"", ""WEST""];";
+			init="[this, ""HUMMVEE""] call VEHGEARSCRIPT; (vehicle this) setVariable [""vehName"", ""Humvee M2""]; (vehicle this) setVariable [""vehTeam"", ""USMC""];";
 		};
 		class Item1
 		{
@@ -209,7 +209,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="UAZ";
-			init="[this, ""UAZ""] call VEHGEARSCRIPT; (vehicle this) setVariable [""vehName"", ""UAZ DShKM""]; (vehicle this) setVariable [""vehTeam"", ""EAST""];";
+			init="[this, ""UAZ""] call VEHGEARSCRIPT; (vehicle this) setVariable [""vehName"", ""UAZ DShKM""]; (vehicle this) setVariable [""vehTeam"", ""VDV""];";
 		};
 	};
 	class Sensors

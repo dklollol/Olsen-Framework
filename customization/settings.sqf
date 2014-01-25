@@ -4,8 +4,8 @@ if (isServer) then {
 
 	timeLimit = 60 * 60; //Time limit in secounds
 
-	ADDPLAYABLETEAM(west, "WEST");
-	ADDAITEAM(east, "EAST");
+	ADDPLAYABLETEAM(west, "USMC"); //Adds a player team called USMC on side west
+	ADDAITEAM(east, "VDV"); //Adds a ai team called VDV on side east
 
 };
 
