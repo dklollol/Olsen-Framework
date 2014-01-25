@@ -12,7 +12,7 @@ ENDTAB;
 
 switch (side player) do { //Checks what team the player is on
 
-case WEST: { //If player is WEST he receives this briefing
+case west: { //If player is west he receives this briefing
 
 NEWTAB("V. Command & Signal:")
 //Text goes here
@@ -42,6 +42,6 @@ NEWTAB("I. Situation:")
 //Text goes here
 ENDTAB;
 
-}; //End of WEST case
+}; //End of west case
 
 }; //End of switch
