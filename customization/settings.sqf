@@ -1,6 +1,6 @@
-setViewDistance 2500; //View distance for both the client and server
-
 if (isServer) then {
+
+	setViewDistance 2500; //View distance for the server (the ai's)
 
 	timeLimit = 60 * 30; //Time limit in seconds - 60 seconds * 30 = 1800 seconds = 30 min 
 
@@ -10,6 +10,8 @@ if (isServer) then {
 };
 
 if (!isDedicated) then {
+
+	setViewDistance 2500; //View distance for the player
 	
 	ace_settings_enable_vd_change = true; //Allows people to change their view distance
 	ace_settings_enable_tg_change = false; //Disallows people to change their terrain grid
