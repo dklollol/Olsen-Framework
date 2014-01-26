@@ -1,11 +1,11 @@
+#include "settings.sqf"
+
 //The output for example: 17:23 on the 22/02 is:
 //1723H, 22nd February
 //area
 //island
 
 private["_month", "_hour", "_min"];
-
-#include "settings.sqf"
 
 switch (date select 1) do {
 	case 1: {_month = "January"};

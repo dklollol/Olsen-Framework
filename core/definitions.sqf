@@ -74,8 +74,8 @@ CURRENTCOUNT set [count CURRENTCOUNT, [NAME, SIDE, "currentAi"]];
 	}; \
 } forEach TEAMS;
 
-//CASUALITYCHECK returns the casualty percentage of TEAM
-#define CASUALITYCHECK(TEAM, VARNAME) \
+//CASUALTYCHECK returns the casualty percentage of TEAM
+#define CASUALTYCHECK(TEAM, VARNAME) \
 _temp = 0; \
 { \
 	if ((_x select 0) == TEAM) exitWith { \
