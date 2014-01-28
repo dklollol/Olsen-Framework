@@ -7,8 +7,8 @@ ADDWEAPON("ItemCompass"); \
 ADDWEAPON("ACRE_PRC343"); \
 ADDWEAPON("ACE_Earplugs"); \
 PACKIFAK(1, 1, 0); \
-ADDMAGAZINES("ACE_Morphine"); \
-ADDMAGAZINES("ACE_Epinephrine");
+ADDMAGAZINES("ACE_Morphine", 1); \
+ADDMAGAZINES("ACE_Epinephrine", 1);
 
 switch (_type) do {
 	case "SL": {

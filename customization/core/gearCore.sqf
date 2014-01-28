@@ -1,5 +1,4 @@
 #define ADDMAGAZINES(MAGAZINE, AMMOUNT) \
-_temp = 0; \
 for "_i" from 1 to AMMOUNT do { \
 	_unit addmagazine MAGAZINE; \
 };
@@ -8,13 +7,13 @@ for "_i" from 1 to AMMOUNT do { \
 _unit addweapon WEAPON;
 
 #define ADDRUCKMAGAZINES(MAGAZINE, AMMOUNT) \
-_temp = [_unit, MAGAZINE, AMMOUNT] spawn ACE_fnc_packMagazine;
+[_unit, MAGAZINE, AMMOUNT] call ACE_fnc_packMagazine;
 
 #define ADDONBACKWEAPON(WEAPON) \
 _unit setVariable ["ace_weaponOnBack", WEAPON];
 
-#define ADDRUCKWEAPONS(MAGAZINE, AMMOUNT) \
-_temp = [_unit, MAGAZINE, AMMOUNT] spawn ACE_fnc_PackWeapon;
+#define ADDRUCKWEAPONS(WEAPON, AMMOUNT) \
+[_unit, WEAPON, AMMOUNT] call ACE_fnc_PackWeapon;
 
 #define PACKIFAK(SLOT1, SLOT2, SLOT3) \
 [_unit, SLOT1, SLOT2, SLOT3] call ACE_fnc_PackIFAK;
