@@ -16,6 +16,9 @@ _unit setVariable ["ace_weaponOnBack", WEAPON];
 #define ADDRUCKWEAPONS(MAGAZINE, AMMOUNT) \
 _temp = [_unit, MAGAZINE, AMMOUNT] spawn ACE_fnc_PackWeapon;
 
+#define PACKIFAK(SLOT1, SLOT2, SLOT3) \
+[_unit, SLOT1, SLOT2, SLOT3] call ACE_fnc_PackIFAK;
+
 _unit = _this select 0;
 _type = _this select 1;
 _groupName = _this select 2;

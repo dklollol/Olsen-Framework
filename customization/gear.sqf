@@ -6,7 +6,7 @@ ADDWEAPON("ItemWatch"); \
 ADDWEAPON("ItemCompass"); \
 ADDWEAPON("ACRE_PRC343"); \
 ADDWEAPON("ACE_Earplugs"); \
-[_unit, 1, 1, 0] call ACE_fnc_PackIFAK; \
+PACKIFAK(1, 1, 0); \
 ADDMAGAZINES("ACE_Morphine"); \
 ADDMAGAZINES("ACE_Epinephrine");
 
