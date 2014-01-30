@@ -1,4 +1,4 @@
-if (isServer) then {
+if (isServer) then { //This scope is only for the server
 
 	setViewDistance 2500; //View distance for the server (the ai's)
 
@@ -9,7 +9,7 @@ if (isServer) then {
 
 };
 
-if (!isDedicated) then {
+if (!isDedicated) then { //This scope is only for the player
 
 	setViewDistance 2500; //View distance for the player
 	
@@ -18,3 +18,5 @@ if (!isDedicated) then {
 	missionNamespace setVariable ["ace_viewdistance_limit", 2500]; //The limit the player can change his view distance to
 	
 };
+
+//This scope is for the server and the player
