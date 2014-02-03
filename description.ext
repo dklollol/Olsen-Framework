@@ -17,3 +17,7 @@ class Extended_PreInit_EventHandlers {
 		init = "GEARSCRIPT = compile preprocessFileLineNumbers 'customization\gear.sqf'; VEHGEARSCRIPT = compile preprocessFileLineNumbers 'customization\vehGear.sqf'"; //Compiles the gear script for the server and client
 	};
 };
+
+class CfgSounds {
+    #include "modules\ao limit\sounds.ext.add"
+}
