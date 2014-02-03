@@ -88,7 +88,7 @@ if (!isDedicated) then {
             };
             #endif //AOLIMITCIV
             
-            sleep 10;
+            sleep AOLIMITCHECKINTERVAL;
         };
     };
 };
