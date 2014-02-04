@@ -3,11 +3,11 @@
 if (!isDedicated) then {
 	_target = leader player;
 	
-	if (player == _target) then {
+	if (player == _target || [_target] call ace_sys_wounds_fnc_isUncon) then {
 		_rank = -1;
 	
 		{
-			if (rankId _x > _rank) then {
+			if (rankId _x > _rank && !([_x] call ace_sys_wounds_fnc_isUncon)) then {
 				_rank = rankId _x;
 				_target = _x;
 			};
