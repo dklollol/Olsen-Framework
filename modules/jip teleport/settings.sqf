@@ -1,6 +1,6 @@
-// LEADERDISTANCE
-// On spawn, if your squad leader is further then LEADERDISTANCE away, you get the option to teleport to him.
-#define LEADERDISTANCE 200
+// JIPDISTANCE
+// On spawn, if your squad is further then JIPDISTANCE away, you get the option to teleport to them.
+#define JIPDISTANCE 200
 
 // SPAWNDISTANCE
 // If you move SPAWNDISTANCE away from your spawnpoint you loose the option to teleport.

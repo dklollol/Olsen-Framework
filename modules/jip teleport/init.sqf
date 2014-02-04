@@ -1,8 +1,21 @@
 #include "settings.sqf"
 
 if (!isDedicated) then {
-	if (((leader player) distance player) >  LEADERDISTANCE) then {
-		_teleportAction = player addAction ["Teleport to Squad Leader", "modules\jip teleport\teleportAction.sqf"];
+	_target = leader player;
+	
+	if (player == _target) then {
+		_rank = -1;
+	
+		{
+			if (rankId _x > _rank) then {
+				_rank = rankId _x;
+				_target = _x;
+			};
+		} forEach ((units group player) - [player]);
+	};
+
+	if ((_target distance player) >  JIPDISTANCE) then {
+		_teleportAction = player addAction ["Teleport to Squad", "modules\jip teleport\teleportAction.sqf", _target];
 		
 		[] spawn { //Spawns code running in parallel
 			_spawnPos = getPosATL player;

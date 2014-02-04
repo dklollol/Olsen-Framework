@@ -1,16 +1,16 @@
 _id = _this select 2;
-_leader = (leader player);
+_target = _this select 3;
 
-if ((vehicle _leader) != _leader) then { //Checks if the squad leader is in a vehicle
-	if ((vehicle _leader) emptyPositions "cargo" == 0) then { //Checks if vehicle has empty seats
-		hint "No more room in the squad leaders vehicle, try again later";
+if ((vehicle _target) != _target) then { //Checks if the target is in a vehicle
+	if ((vehicle _target) emptyPositions "cargo" == 0) then { //Checks if vehicle has empty seats
+		hint "No more room in the vehicle, try again later";
 	}
 	else {
-		player moveincargo (vehicle _leader);
+		player moveincargo (vehicle _target);
 		player removeAction _id;
 	};
 }
 else {
-	player setPos (getpos _leader);
+	player setPos (getpos _target);
 	player removeAction _id;
 };
