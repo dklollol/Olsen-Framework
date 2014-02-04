@@ -17,11 +17,11 @@ if (!isDedicated) then {
 	if ((_target distance player) >  JIPDISTANCE) then {
 		_teleportAction = player addAction ["Teleport to Squad", "modules\jip teleport\teleportAction.sqf", _target];
 		
-		[] spawn { //Spawns code running in parallel
+		[_teleportAction] spawn { //Spawns code running in parallel
 			_spawnPos = getPosATL player;
 			while {true} do {
 				if (player distance _spawnPos > SPAWNDISTANCE) exitWith { //Exitwith ends the loop
-					player removeAction _teleportAction;
+					player removeAction (_this select 0);
 				};
 				sleep (60); //Runs every min
 			};
