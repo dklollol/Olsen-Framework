@@ -4,3 +4,4 @@ ADDMODULE("time sync");
 ADDMODULE("start text");
 ADDMODULE("safe spawn");
 ADDMODULE("jip teleport");
+ADDMODULE("tvt markers");
