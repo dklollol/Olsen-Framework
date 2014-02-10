@@ -11,6 +11,10 @@ _teams = _this select 2;
 
 disableUserInput true;
 
+{
+	_x enableSimulation false;
+} forEach vehicles;
+
 _leftText = "";
 _rightText = "";
 _textSide = 0;
