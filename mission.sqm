@@ -196,7 +196,7 @@ class Mission
 			vehicle="HMMWV_M2";
 			leader=1;
 			skill=0.60000002;
-			init="[this, ""HUMMVEE""] call VEHGEARSCRIPT; (vehicle this) setVariable [""vehName"", ""Humvee M2""]; (vehicle this) setVariable [""vehTeam"", ""USMC""];";
+			init="[this, ""Humvee M2"", ""USMC""] call TRACKASSET;";
 		};
 		class Item1
 		{
@@ -209,22 +209,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="UAZ";
-			init="[this, ""UAZ""] call VEHGEARSCRIPT; (vehicle this) setVariable [""vehName"", ""UAZ DShKM""]; (vehicle this) setVariable [""vehTeam"", ""VDV""];";
-		};
-	};
-	class Sensors
-	{
-		items=1;
-		class Item0
-		{
-			position[]={3435.479,18.992722,3530.7278};
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="_null = [player] execVM ""utility\gearExport.sqf"";";
-			class Effects
-			{
-			};
+			init="[this, ""UAZ DShKM"", ""VDV""] call TRACKASSET;";
 		};
 	};
 };
