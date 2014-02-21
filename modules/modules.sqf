@@ -7,3 +7,4 @@ ADDMODULE("jip teleport");
 ADDMODULE("tvt markers");
 ADDMODULE("earplugs");
 ADDMODULE("ao limit");
+ADDMODULE("setup timer");

@@ -214,7 +214,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={3436.823,19,3616.7478};
@@ -234,6 +234,18 @@ class Mission
 			a=60;
 			b=40;
 			angle=-23;
+		};
+		class Item2
+		{
+			position[]={3438.1467,19,3617.4929};
+			name="westSetup";
+			markerType="ELLIPSE";
+			type="Empty";
+			fillName="Border";
+			a=20;
+			b=10;
+			angle=23;
+			drawBorder=1;
 		};
 	};
 };
