@@ -11,7 +11,7 @@ if (!isDedicated) then {
 
 	{
 		if ((_x select 0) != (side player)) then {
-			deleteMarkerLocal (_x select 1);
+			(_x select 1) setMarkerAlphaLocal 0;
 		};
 	} forEach _markers;
 };
