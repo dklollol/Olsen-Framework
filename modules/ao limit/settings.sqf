@@ -4,3 +4,6 @@
 // Example:
 // ADDAOMARKER(ANY, "entireAO");
 // ADDAOMARKER(east, "zargabad");
+
+ADDAOMARKER(ANY, "AO1");
+ADDAOMARKER(ANY, "AO2");

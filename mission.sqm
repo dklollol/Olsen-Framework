@@ -218,7 +218,7 @@ class Mission
 		class Item0
 		{
 			position[]={3436.823,19,3616.7478};
-			name="test";
+			name="AO1";
 			markerType="RECTANGLE";
 			type="Empty";
 			a=40;
@@ -228,7 +228,7 @@ class Mission
 		class Item1
 		{
 			position[]={3522.8738,19,3599.8972};
-			name="test2";
+			name="AO2";
 			markerType="ELLIPSE";
 			type="Empty";
 			a=60;
