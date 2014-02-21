@@ -4,7 +4,7 @@ ADDMODULE("time sync");
 ADDMODULE("start text");
 ADDMODULE("safe spawn");
 ADDMODULE("jip teleport");
-ADDMODULE("tvt markers");
+ADDMODULE("marker control");
 ADDMODULE("earplugs");
 ADDMODULE("ao limit");
 ADDMODULE("setup timer");
