@@ -145,3 +145,8 @@ STRING setMarkerType "EMPTY";
 
 #define ADDMODULE(NAME) \
 call compile preprocessFileLineNumbers ("modules\" + NAME + "\init.sqf");
+
+#define INAREA(UNIT, MARKER) \
+[UNIT, MARKER] call FNC_INAREA
+
+FNC_INAREA = compile preprocessFileLineNumbers "core\inArea.sqf";

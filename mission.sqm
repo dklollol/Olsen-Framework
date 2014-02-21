@@ -188,7 +188,7 @@ class Mission
 		items=2;
 		class Item0
 		{
-			position[]={3479.5876,19,3625.7834};
+			position[]={3461.1567,19,3617.1375};
 			azimut=179.436;
 			special="NONE";
 			id=9;
@@ -210,6 +210,30 @@ class Mission
 			skill=0.60000002;
 			text="UAZ";
 			init="[this, ""UAZ DShKM"", ""VDV""] call TRACKASSET;";
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={3436.823,19,3616.7478};
+			name="test";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=40;
+			b=20;
+			angle=23;
+		};
+		class Item1
+		{
+			position[]={3522.8738,19,3599.8972};
+			name="test2";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=60;
+			b=40;
+			angle=-23;
 		};
 	};
 };
