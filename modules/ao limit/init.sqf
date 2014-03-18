@@ -21,7 +21,7 @@ if (!isDedicated) then {
 				};
 			} forEach (_this select 0);
 			
-			_pos = getPosATL _vehicle;
+			_pos = getPosATL (vehicle player);
 			_allowedOutside = false;
 			
 			while {true} do {
